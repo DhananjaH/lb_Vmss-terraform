@@ -1,0 +1,28 @@
+# Local .terraform directories (provider plugins, cached modules)
+**/.terraform/*
+
+# Terraform state files — contain sensitive data (resource IDs, sometimes secrets in plain text)
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Variable files — often contain sensitive/environment-specific values
+*.tfvars
+*.tfvars.json
+
+# Ignore override files (used for local dev overrides, shouldn't be committed)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+.terraform.local.hcl
+
+.DS_Store

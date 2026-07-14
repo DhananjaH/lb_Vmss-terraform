@@ -1,8 +1,6 @@
-Deploy an Azure VM Scale set with load balancing using Terraform.
+<h1> Deploy an Azure VM Scale set with load balancing using Terraform. </h1>
 
-Deploy an Azure VM Scale set with load balancing using Terraform.
-
-
+![alt text](image.png)
 
 
 Introduction
@@ -33,10 +31,10 @@ custom_data = base64encode(templatefile("${path.module}/custom_data.tpl", {
 I have crate the file name call Custom_data.tpl in the Visual code their I put my script that run while creating the VMSS.
 
 
-
-
 Step 1 :   lab diagram 
 
+
+![alt text](image-1.png)
 
 
 First we connect the terraform with azure environment .
@@ -87,19 +85,17 @@ Terraform matches these by variable name and plugs the value in wherever var.res
 Step 3 : Creating the load balancer using the module.
 
 
-
+![alt text](image-2.png)
 
 
 Step 4 : Creating the VMSS
 
 
-
+![alt text](image-3.png)
 
 
 
 
 We are able to access the  load balancer  frontend IP address.
 
-
-
-
+![alt text](image-4.png)
